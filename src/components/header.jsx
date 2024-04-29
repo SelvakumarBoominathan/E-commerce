@@ -34,7 +34,7 @@ const header = () => {
         </div>
 
         <div className="nav_ItemBasket">
-        <ShoppingCartSharpIcon className="itembasket"  fontSize='large'/>
+        <ShoppingCartSharpIcon  fontSize='large'/>
           <span className="nav_Item2 nav_basketCount">0</span>
         </div>
 
