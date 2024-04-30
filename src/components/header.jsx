@@ -2,7 +2,7 @@ import React from 'react';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import StorefrontSharpIcon from '@mui/icons-material/StorefrontSharp';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
-import './style.css'
+import './style.css';
 
 const header = () => {
   return (

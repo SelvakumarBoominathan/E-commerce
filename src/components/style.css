@@ -92,4 +92,25 @@
 
 /* Styles for HOME */
 
+.home_image{
+  width: 100%;
+}
+
+
+/* Aside Navbar container */
+.aside_container{
+  border : 1px solid black;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button{
+  background-color: transparent;
+  border : none;
+  color: black;
+  font: normal 600 20px/40px poppins, serif;
+  /* font-style: ; */
+}
 
