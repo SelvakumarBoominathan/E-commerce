@@ -1,26 +1,21 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {BrowserRouter, Link} from 'react-router-dom';
 import './style.css';
 
 
+// let category_Array = ["All", "Electronics", "Fashion", "Appliences", "Mobiles"]
+
 const Links = () => {
 return(
-<>
-  <div className='navbar_container'>
-    {/* <Link to="/1" >Electronics</Link>
-    <Link to="/2" >Cloths</Link>
-    <Link to="/3" >Appliences</Link>
-    <Link to="/4" >Mobiles</Link> */}
-
-    <button >All</button>
-    <button >Electronics</button>
-    <button >Fashion</button>
-    <button >Appliences</button>
-    <button >Mobiles</button>
-    {/* <button >Home & Kitchen</button>
-    <button >Books</button> */}
-  </div>
-</>
+  <div className="navbar_container">
+<BrowserRouter>
+      <Link to="/" className='btn_link'>All</Link>
+      <Link to="/electronics" className='btn_link'>Electronics</Link>
+      <Link to="/fashion" className='btn_link'>Fashion</Link>
+      <Link to="/appliances" className='btn_link'>Appliances</Link>
+      <Link to="/mobiles" className='btn_link'>Mobiles</Link>
+</BrowserRouter>
+</div>
 )
 
 }

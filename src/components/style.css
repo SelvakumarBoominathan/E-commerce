@@ -109,13 +109,13 @@
   
 }
 
-button{
+.btn_link{
   background-color: transparent;
   border : none;
   color: #ebe7e7;
   font: normal 600 20px/40px poppins, serif;
   font-size: clamp(5px, 3vw, 20px);
-  /* font-style: ; */
+  text-decoration: none;
 }
 
 /* body component */
