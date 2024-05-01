@@ -9,7 +9,7 @@ const header = () => {
     <div className="header">
 
       <div className="header_logo">
-        <StorefrontSharpIcon className='header_logoImage'  fontSize="large"/>
+        <StorefrontSharpIcon className='header_logoImage'  fontSize="medium"/>
         <h2 className='header_logoTitle'>E shop</h2>
       </div>
 
@@ -24,7 +24,7 @@ const header = () => {
       <div className="header_nav">
 
         <div className="nav_Item">
-          <span className="nav_Item1">Hello Guest</span>
+          <span className="nav_Item1">Hello</span>
           <span className="nav_Item2">Sign In</span>
         </div>
 
@@ -34,7 +34,7 @@ const header = () => {
         </div>
 
         <div className="nav_ItemBasket">
-        <ShoppingCartSharpIcon  fontSize='large'/>
+        <ShoppingCartSharpIcon  fontSize='medium'/>
           <span className="nav_Item2 nav_basketCount">0</span>
         </div>
 
