@@ -3,17 +3,20 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Body from "./Body";
 
 const Parentbody = ({valFromLink}) => {
- 
-const updatedData =Data.filter((val) => val.Category === valFromLink);
+
+console.log(Data)
+const updatedData =Data.filter((val) => val.Category ===valFromLink);
+
+
 
   return (
     <BrowserRouter>
     <Routes>
-                  <Route path="/" element={<Body  data={updatedData}/>}/>
-                  <Route path="/electronics" element={<Body  data={updatedData}/>}/>
-                  <Route path="/fashion" element={<Body  data={updatedData}/>}/>
-                  <Route path="/appliances" element={<Body  data={updatedData}/>}/>
-                  <Route path="/mobiles" element={<Body  data={updatedData}/>}/>
+                  <Route path="/" element={<Body  data={valFromLink === "All" ? Data : updatedData}/>}/>
+                  <Route path="/electronics" element={<Body  data={valFromLink === "All" ? Data : updatedData}/>}/>
+                  <Route path="/fashion" element={<Body  data={valFromLink === "All" ? Data : updatedData}/>}/>
+                  <Route path="/appliances" element={<Body  data={valFromLink === "All" ? Data : updatedData}/>}/>
+                  <Route path="/mobiles" element={<Body  data={valFromLink === "All" ? Data : updatedData}/>}/>
     </Routes>
     </BrowserRouter>
   )

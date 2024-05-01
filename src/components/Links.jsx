@@ -1,11 +1,9 @@
 import React from 'react';
-import { useState } from 'react';
 import {BrowserRouter, Link} from 'react-router-dom';
 import './style.css';
-import Parentbody from './Parentbody';
 
 
-// let category_Array = ["All", "Electronics", "Fashion", "Appliences", "Mobiles"]
+let category_Array = ["All", "Electronics", "Fashion", "Appliences", "Mobiles"]
 
 const Links = ({onClick}) => {
 
