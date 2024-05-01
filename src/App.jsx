@@ -9,20 +9,19 @@ import { useState } from 'react';
 
 function App() {
 
-    const [valueFromLinks, setValueFromLinks] = useState(null);
-  
-    // Callback function to receive the value from child component
-    const handleValueFromLink = (value) => {
-      setValueFromLinks(value);
+    const [valFromLink, setValFromLink] = useState('All');
+
+    const handleLinkClick = (val) => {
+      setValFromLink(val);
     };
-  
+
 
   return (
     <div>
           <Header/>
-          <Links valueFromParent={valueFromLinks}/>  
+          <Links onClick = {handleLinkClick}/>  
           <Home/>
-          <Parentbody onValueFromLink={handleValueFromLink}/>
+          <Parentbody valFromLink = {valFromLink}/>
           
      </div>
   )

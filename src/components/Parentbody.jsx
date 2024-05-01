@@ -1,19 +1,19 @@
 import React from 'react';
-import { useState } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Body from "./Body";
 
-const Parentbody = () => {
+const Parentbody = ({valFromLink}) => {
+ 
+const updatedData =Data.filter((val) => val.Category === valFromLink);
 
-  const [DataArr, SetdataArr] = useState(Data)
   return (
     <BrowserRouter>
     <Routes>
-                  <Route path="/" element={<Body  data={Data}/>}/>
-                  <Route path="/electronics" element={<Body  data={Data}/>}/>
-                  <Route path="/fashion" element={<Body  data={Data}/>}/>
-                  <Route path="/appliances" element={<Body  data={Data}/>}/>
-                  <Route path="/mobiles" element={<Body  data={Data}/>}/>
+                  <Route path="/" element={<Body  data={updatedData}/>}/>
+                  <Route path="/electronics" element={<Body  data={updatedData}/>}/>
+                  <Route path="/fashion" element={<Body  data={updatedData}/>}/>
+                  <Route path="/appliances" element={<Body  data={updatedData}/>}/>
+                  <Route path="/mobiles" element={<Body  data={updatedData}/>}/>
     </Routes>
     </BrowserRouter>
   )

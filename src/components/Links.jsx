@@ -7,12 +7,10 @@ import Parentbody from './Parentbody';
 
 // let category_Array = ["All", "Electronics", "Fashion", "Appliences", "Mobiles"]
 
-const Links = () => {
-
-const [selectedCategory, Setselectedcategory] = useState("All");
+const Links = ({onClick}) => {
 
 const handleLinkClick = (category) => {
-  Setselectedcategory(category)
+  onClick(category)
 }
 
 
@@ -22,7 +20,7 @@ return(
       <Link to="/" className='btn_link' onClick={() => handleLinkClick("All")}>All</Link>
       <Link to="/electronics" className='btn_link' onClick={() => handleLinkClick("Electronics")}>Electronics</Link>
       <Link to="/fashion" className='btn_link' onClick={() => handleLinkClick("Fashion")}>Fashion</Link>
-      <Link to="/appliances" className='btn_link' onClick={() => handleLinkClick("Appliances")}>Appliances</Link>
+      <Link to="/appliances" className='btn_link' onClick={() => handleLinkClick("Appliences")}>Appliances</Link>
       <Link to="/mobiles" className='btn_link' onClick={() => handleLinkClick("Mobiles")}>Mobiles</Link>
       {/* <Parentbody selectedCategory={selectedCategory}/> */}
 </BrowserRouter>
