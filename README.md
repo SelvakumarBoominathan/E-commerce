@@ -1,14 +1,12 @@
-# React + Vite
+# React Router-DOM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+It is a simple E-commerce website using React-Router-Dom method. It includes React-vite, RouterDom, components, Props ect..
 
-Currently, two official plugins are available:
+## Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Install React-Vite:
+     - Follow the instructions on the official installation page of React-Vite. 
 
-
-Notes: 
-It is a simple E commerce website using react-router-dom method.
-This can be checked by clicking the categories provided on the top of the webpage below header.
+##NOTE : It can be verified by clicking the various categories of product categories to see the router process.
 
